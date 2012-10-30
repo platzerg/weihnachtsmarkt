@@ -13,10 +13,10 @@ public class Test {
 		Class.forName("org.sqlite.JDBC");
 		// Connection conn = DriverManager.getConnection("jdbc:sqlite:test.db");
 		Connection conn1 = DriverManager
-				.getConnection("jdbc:sqlite:biergarten.sqlite");
+				.getConnection("jdbc:sqlite:weihnachtsmaerkte.sqlite");
 		Statement stat1 = conn1.createStatement();
 
-		ResultSet rs1 = stat1.executeQuery("select * from biergarten;");
+		ResultSet rs1 = stat1.executeQuery("select * from weihnachtsmarkt;");
 		WeihnachtsmarktVO weihnachtsmarktVO = null;
 		while (rs1.next()) {
 			ResultSetMetaData rm = rs1.getMetaData();
