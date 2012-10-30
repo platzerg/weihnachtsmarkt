@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Biergarten {
+public class Weihnachtsmarkt {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

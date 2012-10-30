@@ -9,7 +9,7 @@ import java.io.Serializable;
  * 
  * @author platzerg
  */
-public class BiergartenVO implements Serializable{
+public class WeihnachtsmarktVO implements Serializable{
 	private static final long serialVersionUID = -8854310183206811021L;
 
 	public long id;
@@ -55,7 +55,7 @@ public class BiergartenVO implements Serializable{
 	
 	
 
-	public BiergartenVO(){
+	public WeihnachtsmarktVO(){
 		
 	}
 }

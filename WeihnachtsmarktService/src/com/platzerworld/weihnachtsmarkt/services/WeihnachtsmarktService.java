@@ -14,22 +14,22 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import com.platzerworld.weihnachtsmarkt.dao.EMFService;
-import com.platzerworld.weihnachtsmarkt.model.Biergarten;
-import com.platzerworld.weihnachtsmarkt.vo.BiergartenJSON;
-import com.platzerworld.weihnachtsmarkt.vo.BiergartenVO;
+import com.platzerworld.weihnachtsmarkt.model.Weihnachtsmarkt;
+import com.platzerworld.weihnachtsmarkt.vo.WeihnachtsmarktJSON;
+import com.platzerworld.weihnachtsmarkt.vo.WeihnachtsmarktVO;
 
 // http://biergartenservice.appspot.com/platzerworld/biergarten/holebiergarten
 
 @Path("/biergarten/")
-public class BiergartenService {
+public class WeihnachtsmarktService {
 	@GET
 	@Produces("text/plain")
 	@Path("/insertbiergarten")
 	public String insertBiergarten() {
 		EntityManager em = null;
-		Biergarten bg;	
+		Weihnachtsmarkt bg;	
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Zum Aumeister";
 		bg.strasse="Sondermeierstrasse 1";
 		bg.plz="80939";
@@ -46,7 +46,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Hirschgarten";
 		bg.strasse="Hirschgarten 1";
 		bg.plz="80639";
@@ -63,7 +63,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Augustinerkeller";
 		bg.strasse="Arnulfstr. 52";
 		bg.plz="80335";
@@ -80,7 +80,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Chinesischer Turm";
 		bg.strasse="Englischer Garten 3";
 		bg.plz="80538";
@@ -97,7 +97,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Erdinger Weißbiergarten";
 		bg.strasse="Heiglhofstr. 12";
 		bg.plz="81377";
@@ -114,7 +114,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Franziskanergarten";
 		bg.strasse="Friedenspromenade 45";
 		bg.plz="81827";
@@ -131,7 +131,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Freihamer Wirtshaus";
 		bg.strasse="Freihamer Allee 21";
 		bg.plz="81249";
@@ -148,7 +148,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Harlachinger Einkehr";
 		bg.strasse="Karolinger-Allee 34";
 		bg.plz="81545";
@@ -165,7 +165,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Hinterbrühl";
 		bg.strasse="Hinterbrühl 2";
 		bg.plz="81479";
@@ -182,7 +182,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Hirschau";
 		bg.strasse="Gyßlingerstr. 15";
 		bg.plz="80805";
@@ -199,7 +199,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Hofbräukeller";
 		bg.strasse="Innere Wiener Str. 19";
 		bg.plz="81667";
@@ -216,7 +216,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Hopfengarten";
 		bg.strasse="Siegenburger Str. 43";
 		bg.plz="81373";
@@ -233,7 +233,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Iberl";
 		bg.strasse="Wilhelm-Leibl-Str. 22";
 		bg.plz="81479";
@@ -250,7 +250,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Laimer's";
 		bg.strasse="Agricolastr. 16";
 		bg.plz="80687";
@@ -267,7 +267,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Langwieder See";
 		bg.strasse="Kreuzkapellenstr. 89";
 		bg.plz="81249";
@@ -284,7 +284,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Leiberheim";
 		bg.strasse="Nixenweg 9";
 		bg.plz="81739";
@@ -301,7 +301,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Löwenbräukeller";
 		bg.strasse="Nymphenburgestr. 2";
 		bg.plz="80335";
@@ -318,7 +318,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Max-Emanuel-Brauerei";
 		bg.strasse="Adalbertstr. 33";
 		bg.plz="80779";
@@ -335,7 +335,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Maxhof";
 		bg.strasse="Mühlthalerstr. 91";
 		bg.plz="81475";
@@ -352,7 +352,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Gutshof Menterschwaige";
 		bg.strasse="Menterschwaigstr. 4";
 		bg.plz="81545";
@@ -369,7 +369,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Michaeli-Garten";
 		bg.strasse="Feichstr. 10";
 		bg.plz="81735";
@@ -386,7 +386,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Muffatwerk";
 		bg.strasse="Zellstraße 4";
 		bg.plz="81667";
@@ -403,7 +403,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Münchner Haupt";
 		bg.strasse="Zielstattstr. 6";
 		bg.plz="81379";
@@ -420,7 +420,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Park Cafè";
 		bg.strasse="Sophienstr. 7";
 		bg.plz="80333";
@@ -437,7 +437,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Paulaner Bräuhaus";
 		bg.strasse="Kapuziner Platz 5";
 		bg.plz="80337";
@@ -454,7 +454,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Paulaner am Nockerberg";
 		bg.strasse="Hochstr. 77";
 		bg.plz="81541";
@@ -471,7 +471,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Prinzregent-Garten";
 		bg.strasse="Benedikterstraße 35";
 		bg.plz="81241";
@@ -488,7 +488,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Rosengarten";
 		bg.strasse="Westendstr. 305";
 		bg.plz="81377";
@@ -505,7 +505,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Seehaus";
 		bg.strasse="Kleinhesselohe 2";
 		bg.plz="80802";
@@ -522,7 +522,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Spektakel";
 		bg.strasse="Pfeuferstr. 32";
 		bg.plz="81737";
@@ -539,7 +539,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="St. Emmeramsmühle";
 		bg.strasse="St. Emmeram 41";
 		bg.plz="81925";
@@ -556,7 +556,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Taxisgarten";
 		bg.strasse="Taxisstr. 12";
 		bg.plz="80637";
@@ -573,7 +573,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Viktualienmarkt";
 		bg.strasse="Viktualienmarkt 6";
 		bg.plz="80331";
@@ -590,7 +590,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Villa Flora";
 		bg.strasse="Hansastr. 44";
 		bg.plz="80636";
@@ -607,7 +607,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Waldheim";
 		bg.strasse="Waldheim 1";
 		bg.plz="81377";
@@ -624,7 +624,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Weyprechthof";
 		bg.strasse="Max-Liebermann-Str. 6";
 		bg.plz="80937";
@@ -641,7 +641,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Cirkuswiese";
 		bg.strasse="Theresienhöhe 7";
 		bg.plz="80339";
@@ -658,7 +658,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Wirtshaus Zamdorfer";
 		bg.strasse="Schwarzwaldstr. 2a";
 		bg.plz="81677";
@@ -675,7 +675,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Zum Grünen Baum";
 		bg.strasse="Verdistr. 47";
 		bg.plz="81247";
@@ -692,7 +692,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Zum Flaucher";
 		bg.strasse="Isarauenstr. 8";
 		bg.plz="81379";
@@ -709,7 +709,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Zum Hirschen";
 		bg.strasse="Sollner Str. 43";
 		bg.plz="81479";
@@ -726,7 +726,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Zur Mühle";
 		bg.strasse="Kirchplatz 5";
 		bg.plz="85737";
@@ -743,7 +743,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Alter Wirt";
 		bg.strasse="Margaretenstr. 31";
 		bg.plz="82152";
@@ -760,7 +760,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Alter Wirt Etterschlag";
 		bg.strasse="Inninger Str. 6";
 		bg.plz="82237";
@@ -777,7 +777,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Zur Aubinger Einkehr";
 		bg.strasse="Größweinsteinplatz 7";
 		bg.plz="81249";
@@ -794,7 +794,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Aujäger";
 		bg.strasse="Austraße 4";
 		bg.plz="82544";
@@ -811,7 +811,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Bartewirt";
 		bg.strasse="Grubstr. 1";
 		bg.plz="83626";
@@ -828,7 +828,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Bergl";
 		bg.strasse="Bergl 1";
 		bg.plz="85764";
@@ -845,7 +845,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Brauhaus Bruck";
 		bg.strasse="Augsburger Str. 41";
 		bg.plz="82256";
@@ -862,7 +862,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Bräustüberl Weihenstephan";
 		bg.strasse="Weihenstephaner Berg 10";
 		bg.plz="85354";
@@ -879,7 +879,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Zum Bruckenfischer";
 		bg.strasse="Dürnstein 1";
 		bg.plz="82544";
@@ -896,7 +896,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Dampfschiff";
 		bg.strasse="Graf-Rasso-Straße 40";
 		bg.plz="82284";
@@ -913,7 +913,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Diablo";
 		bg.strasse="Römerstr. 11";
 		bg.plz="82205";
@@ -930,7 +930,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Einkehr zur Schwaige";
 		bg.strasse="Forst-Kasten-Allee 114";
 		bg.plz="81475";
@@ -947,7 +947,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Emminger Hof";
 		bg.strasse="Emminger Hof 1";
 		bg.plz="86941";
@@ -964,7 +964,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Forsthaus Kasten";
 		bg.strasse="Im Forstenrieder Park";
 		bg.plz="82131";
@@ -981,7 +981,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Fürstenfelder";
 		bg.strasse="Fürstenfeld 15";
 		bg.plz="82256";
@@ -998,7 +998,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Gasthof Grub";
 		bg.strasse="Parsdorfer Str. 5";
 		bg.plz="85586";
@@ -1015,7 +1015,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Gasthaus zur Mühle";
 		bg.strasse="Mühltal 10";
 		bg.plz="82064";
@@ -1032,7 +1032,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Gut Keferloh";
 		bg.strasse="Keferloh 2";
 		bg.plz="85630";
@@ -1049,7 +1049,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Heide Volm";
 		bg.strasse="Bahnhofstr. 51";
 		bg.plz="82152";
@@ -1066,7 +1066,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Heimstettener See";
 		bg.strasse="Am Heimstettener See";
 		bg.plz="85609";
@@ -1083,7 +1083,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Insel-Mühle";
 		bg.strasse="Von-Kahr-Str. 87";
 		bg.plz="80999";
@@ -1100,7 +1100,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Kloster Andechs Bräustüberl";
 		bg.strasse="Bergstraße 2";
 		bg.plz="82346";
@@ -1117,7 +1117,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Klosterbräu Schäftlarn";
 		bg.strasse="Kloster Schäftlarn 16";
 		bg.plz="82067";
@@ -1134,7 +1134,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Kottmeier";
 		bg.strasse="Bräuhausstr. 18";
 		bg.plz="82152";
@@ -1151,7 +1151,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Kugler-Alm";
 		bg.strasse="Linienstr. 93";
 		bg.plz="82041";
@@ -1168,7 +1168,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Landgasthof Alter Wirt";
 		bg.strasse="Hauptstr. 36";
 		bg.plz="85716";
@@ -1185,7 +1185,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Schlossgaststätte Leutstetten";
 		bg.strasse="Altostraße 11";
 		bg.plz="82319";
@@ -1202,7 +1202,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Lochhamer's";
 		bg.strasse="Lochhamer Str. 4";
 		bg.plz="82166";
@@ -1219,7 +1219,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Maisinger Seehof";
 		bg.strasse="Seestr. 14";
 		bg.plz="82343";
@@ -1236,7 +1236,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Plantage!";
 		bg.strasse="Plantage 2";
 		bg.plz="85354";
@@ -1253,7 +1253,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Räuber-Kneißl-Garten";
 		bg.strasse="Hauptstr. 24";
 		bg.plz="82216";
@@ -1270,7 +1270,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Schloßwirtschaft Oberschleißheim";
 		bg.strasse="Maximilianshof 2";
 		bg.plz="85764";
@@ -1287,7 +1287,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Schlosswirtschaft Mariabrunn";
 		bg.strasse="Gut Mariabrunn 3";
 		bg.plz="85244";
@@ -1304,7 +1304,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Schweiger's Landgasthof";
 		bg.strasse="Manhartsdorf 2-4";
 		bg.plz="85456";
@@ -1321,7 +1321,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Seehaus Schreyegg";
 		bg.strasse="Landsbergerstr. 78";
 		bg.plz="82266";
@@ -1338,7 +1338,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Seehof Herrsching";
 		bg.strasse="Seestr. 58";
 		bg.plz="82211";
@@ -1355,7 +1355,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Seepost";
 		bg.strasse="Bahnhofstraße 2";
 		bg.plz="86938";
@@ -1372,7 +1372,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Tutzinger Biergarten";
 		bg.strasse="Midgardstr. 3-5";
 		bg.plz="82327";
@@ -1389,7 +1389,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Waldgasthof Buchenhain";
 		bg.strasse="Am Klettergarten 7";
 		bg.plz="82065";
@@ -1406,7 +1406,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Waldwirtschaft Großhesselohe";
 		bg.strasse="Georg-Kalb-Str. 3";
 		bg.plz="82049";
@@ -1423,7 +1423,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Bavariapark";
 		bg.strasse="Theresienhöhe 15";
 		bg.plz="80339";
@@ -1440,7 +1440,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Concordia Park";
 		bg.strasse="Landshuter Allee 165";
 		bg.plz="80637";
@@ -1457,7 +1457,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Neue Fasanerie";
 		bg.strasse="Hartmannshofstraße 20";
 		bg.plz="80997";
@@ -1474,7 +1474,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Gasthaus Siebenbrunn";
 		bg.strasse="Siebenbrunner Straße 5";
 		bg.plz="81543";
@@ -1491,7 +1491,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Tassilogarten";
 		bg.strasse="Auerfeldstraße 18";
 		bg.plz="81541";
@@ -1508,7 +1508,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="’s Truderinger Wirtshaus";
 		bg.strasse="Kirchtruderinger Straße 17";
 		bg.plz="81829";
@@ -1525,7 +1525,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Osterwaldgarten";
 		bg.strasse="Keferstraße 12";
 		bg.plz="80802";
@@ -1542,7 +1542,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Mangostin Garden";
 		bg.strasse="Maria-Einsiedel-Straße 2";
 		bg.plz="81379";
@@ -1559,7 +1559,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Alte Villa";
 		bg.strasse="Seestraße 32";
 		bg.plz="86919";
@@ -1576,7 +1576,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Alter Wirt Ramersdorf";
 		bg.strasse="Aribonenstraße 8";
 		bg.plz="81669";
@@ -1593,7 +1593,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Mühlenpark";
 		bg.strasse="Mühlgasse 48";
 		bg.plz="85748";
@@ -1610,7 +1610,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Bootshaus";
 		bg.strasse="Zentralländstraße 16";
 		bg.plz="81379";
@@ -1627,7 +1627,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Brückerl";
 		bg.strasse="Goteboldstr. 189";
 		bg.plz="81249";
@@ -1644,7 +1644,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Fischer";
 		bg.strasse="Landsberger Straße 79";
 		bg.plz="82266";
@@ -1661,7 +1661,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Forsthaus St. Hubertus";
 		bg.strasse="St. Hubertus 1";
 		bg.plz="85560";
@@ -1678,7 +1678,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Grünwalder Forstwirt";
 		bg.strasse="Riedweg 41";
 		bg.plz="82067";
@@ -1695,7 +1695,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Hofbrauhaus-Keller Freising";
 		bg.strasse="Lankesbergstraße 5";
 		bg.plz="85356";
@@ -1712,7 +1712,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Waldwirtschaft Hohenlindener Sauschütt";
 		bg.strasse="Sauschütt 1";
 		bg.plz="85664";
@@ -1729,7 +1729,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Kloster Andechs Biergarten";
 		bg.strasse="Bergstraße 2";
 		bg.plz="82346";
@@ -1746,7 +1746,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Kraillinger Brauerei";
 		bg.strasse="Margaretenstraße 59";
 		bg.plz="82152";
@@ -1763,7 +1763,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Landgasthof Langwied";
 		bg.strasse="Waidachanger 9";
 		bg.plz="81249";
@@ -1780,7 +1780,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Lindengarten";
 		bg.strasse="Solalindernstr. 50";
 		bg.plz="81825";
@@ -1797,7 +1797,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Liebhard's Bräustüberl zu Aying";
 		bg.strasse="Münchener Straße 2";
 		bg.plz="85653";
@@ -1814,7 +1814,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Olympia-Alm";
 		bg.strasse="Martin-Luther-King Weg 8";
 		bg.plz="80809";
@@ -1831,7 +1831,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Paulaner Seegarten";
 		bg.strasse="Hochstraße 71";
 		bg.plz="85757";
@@ -1848,7 +1848,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Pe. Es. Kottmeier";
 		bg.strasse="Bräuhausstraße 18";
 		bg.plz="82152";
@@ -1865,7 +1865,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Postgarten";
 		bg.strasse="Andechstrasse 1";
 		bg.plz="82211";
@@ -1882,7 +1882,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Schiaßn";
 		bg.strasse="Neues Schießfeld 2";
 		bg.plz="854345";
@@ -1899,7 +1899,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Schießstätte Allach";
 		bg.strasse="Servetstraße 1";
 		bg.plz="80999 ";
@@ -1916,7 +1916,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Schlossallee Haag";
 		bg.strasse="Freisinger Straße 1";
 		bg.plz="85410";
@@ -1933,7 +1933,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Schloss Dachau Biergarten";
 		bg.strasse="Schloßstraße 2";
 		bg.plz="85221";
@@ -1950,7 +1950,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Seehaus Schreyegg";
 		bg.strasse="Landsberger Straße 78";
 		bg.plz="82266";
@@ -1967,7 +1967,7 @@ public class BiergartenService {
 
 
 		em = EMFService.get().createEntityManager();
-		bg = new Biergarten();
+		bg = new Weihnachtsmarkt();
 		bg.name="Wirtshaus am Hart";
 		bg.strasse="Sudetendeutsche Straße 40";
 		bg.plz="80937";
@@ -1996,17 +1996,17 @@ public class BiergartenService {
 	@Produces(MediaType.APPLICATION_JSON) //application/json
 	@Path("/holebiergarten")
 	public String getBiergarten() {
-		List<BiergartenVO> biergartenTOs = new ArrayList<BiergartenVO>();
-		BiergartenJSON biergartenJSON = new BiergartenJSON();
+		List<WeihnachtsmarktVO> biergartenTOs = new ArrayList<WeihnachtsmarktVO>();
+		WeihnachtsmarktJSON biergartenJSON = new WeihnachtsmarktJSON();
 		biergartenJSON.setBiergartenid("GPL");
-		BiergartenVO bg = null;
+		WeihnachtsmarktVO bg = null;
 		
 		EntityManager em = EMFService.get().createEntityManager();
 		Query q = em.createQuery("select b from Biergarten b");
 		
-		List<Biergarten> biergaerten = q.getResultList();
-		for (Biergarten biergarten : biergaerten) {
-			bg = new BiergartenVO();
+		List<Weihnachtsmarkt> biergaerten = q.getResultList();
+		for (Weihnachtsmarkt biergarten : biergaerten) {
+			bg = new WeihnachtsmarktVO();
 			bg.id = biergarten.id;
 			bg.name = biergarten.name;
 			bg.strasse = biergarten.strasse;
@@ -2045,19 +2045,19 @@ public class BiergartenService {
 	@Produces("application/json")
 	@Path("/holefavoriten")
 	public String getFavoriten() {
-		List<BiergartenVO> biergartenTOs = new ArrayList<BiergartenVO>();
-		BiergartenJSON biergartenJSON = new BiergartenJSON();
+		List<WeihnachtsmarktVO> biergartenTOs = new ArrayList<WeihnachtsmarktVO>();
+		WeihnachtsmarktJSON biergartenJSON = new WeihnachtsmarktJSON();
 		biergartenJSON.setBiergartenid("GPL");
 		
-		BiergartenVO bg = null;
+		WeihnachtsmarktVO bg = null;
 		
 		EntityManager em = EMFService.get().createEntityManager();
 		Query q = em.createQuery("select b from Biergarten b where b.favorit=true");
 		//q.setParameter("myfavorit", "true");
 				
-		List<Biergarten> biergaerten = q.getResultList();
-		for (Biergarten biergarten : biergaerten) {
-			bg = new BiergartenVO();
+		List<Weihnachtsmarkt> biergaerten = q.getResultList();
+		for (Weihnachtsmarkt biergarten : biergaerten) {
+			bg = new WeihnachtsmarktVO();
 			bg.id = biergarten.id;
 			bg.name = biergarten.name;
 			bg.strasse = biergarten.strasse;
@@ -2098,18 +2098,18 @@ public class BiergartenService {
 	@GET
 	@Path("/get")
 	@Produces(MediaType.APPLICATION_JSON)
-	public BiergartenJSON getBiergartenInJSON() {	
-		List<BiergartenVO> biergartenTOs = new ArrayList<BiergartenVO>();
-		BiergartenJSON biergartenJSON = new BiergartenJSON();
+	public WeihnachtsmarktJSON getBiergartenInJSON() {	
+		List<WeihnachtsmarktVO> biergartenTOs = new ArrayList<WeihnachtsmarktVO>();
+		WeihnachtsmarktJSON biergartenJSON = new WeihnachtsmarktJSON();
 		biergartenJSON.setBiergartenid("GPL");		
-		BiergartenVO bg = null;
+		WeihnachtsmarktVO bg = null;
 		
 		EntityManager em = EMFService.get().createEntityManager();
 		Query q = em.createQuery("select b from Biergarten b");
 		
-		List<Biergarten> biergaerten = q.getResultList();
-		for (Biergarten biergarten : biergaerten) {
-			bg = new BiergartenVO();
+		List<Weihnachtsmarkt> biergaerten = q.getResultList();
+		for (Weihnachtsmarkt biergarten : biergaerten) {
+			bg = new WeihnachtsmarktVO();
 			bg.id = biergarten.id;
 			bg.name = biergarten.name;
 			bg.strasse = biergarten.strasse;
@@ -2142,7 +2142,7 @@ public class BiergartenService {
 	@POST
 	@Path("/post")
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Response createBiergartenInJSON(BiergartenJSON biergartenJSON) {
+	public Response createBiergartenInJSON(WeihnachtsmarktJSON biergartenJSON) {
 	
 		String result = "Track saved : ";
 		return Response.status(201).entity(result).build();
