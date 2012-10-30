@@ -47,30 +47,12 @@ public class WeihnachtsmarktService {
 		weihnachtsmarkt.email="diego_ertl@yahoo.de";
 		weihnachtsmarkt.url="www.mittelaltermarkt-muenchen.de";
 		weihnachtsmarkt.latitude="48,143269";
-		weihnachtsmarkt.longitude="11.576145";
+		weihnachtsmarkt.longitude="11,576145";
 		weihnachtsmarkt.desc="Bereits anno 1410 wurde hier eine „Nikolausdult“ erwähnt. Der Mittelaltermarkt auf dem Wittelsbacherplatz (nahe Odeonsplatz) zeigt, wie es anno dazumal gewesen und zugegangen sein könnte. Er  knüpft an diese alte, bayerische Tradition an und gilt wegen seines historischen Gepräges als besonders stimmungsvoll. Für vier Wochen zieht dort lebendiges Mittelalter ein.";
 		weihnachtsmarkt.favorit=false;
 		em.persist(weihnachtsmarkt);
 		em.close();
-
-
-		em = EMFService.get().createEntityManager();
-		weihnachtsmarkt = new Weihnachtsmarkt();
-		weihnachtsmarkt.name="Weihnachtsmarkt Schwabing";
-		weihnachtsmarkt.oeffnungszeit="30.11.2012 - 24.12.2012 Mo-Fr 12:00 – 20:30 Uhr, Sa/So 11:00 – 20:30 Uhr, 24.12.2012 11:00 - 14:00";
-		weihnachtsmarkt.strasse="Münchner Freiheit";
-		weihnachtsmarkt.plz="80802";
-		weihnachtsmarkt.ort="München (Schwabing)";
-		weihnachtsmarkt.telefon="089/33 81 33";
-		weihnachtsmarkt.email="";
-		weihnachtsmarkt.url="www.hirschgarten.de";
-		weihnachtsmarkt.latitude="48,163169";
-		weihnachtsmarkt.longitude="11,586939";
-		weihnachtsmarkt.desc="Bereits zu Beginn der 70er Jahre stellten etliche Künstler, die im Sommer auf der \"Kunstmeile\" auf der Leopoldstraße vertreten waren, in der Vorweihnachtszeit im ehemaligen Schweizer Haus ihre Arbeiten aus. 1975 entstand daraus die Idee, einen Künstlermarkt, mit richtigen Ständen und einem Veranstaltungsprogramm auf die Beine zu stellen. Mit Unterstützung des damaligen Bezirksausschusses unter der Leitung von Frau v. Welser-Ude wurde 1976 der Schwabinger Weihnachtsmarkt gegründet. Von Beginn an war der Markt als Künstlermarkt konzipiert und genehmigt. Die Internationalität der ca. 100 Aussteller und Ausstellerinnen, das hohe Niveau der künstlerischen Arbeiten, sowie die Qualität im Handwerklichen, das Kulturprogramm und die jährlich wechselnde Dekoration machen das unverwechselbare Flair des Marktes aus.";
-		weihnachtsmarkt.favorit=false;
-		em.persist(weihnachtsmarkt);
-		em.close();
-	
+		
 		return "Hello Weihnachtsmarkt OK!";
 		
 		
@@ -80,15 +62,14 @@ public class WeihnachtsmarktService {
 	@Produces(MediaType.APPLICATION_JSON) //application/json
 	@Path("/holeweihnachtsmaerkte")
 	public String getBiergarten() {
-		return "Hello Weihnachtsmarkt holeweihnachtsmaerkte OK!";
-		/*
+		
 		List<WeihnachtsmarktVO> biergartenTOs = new ArrayList<WeihnachtsmarktVO>();
 		WeihnachtsmarktJSON biergartenJSON = new WeihnachtsmarktJSON();
 		biergartenJSON.setBiergartenid("GPL");
 		WeihnachtsmarktVO bg = null;
 		
 		EntityManager em = EMFService.get().createEntityManager();
-		Query q = em.createQuery("select b from Biergarten b");
+		Query q = em.createQuery("select b from Weihnachtsmarkt b");
 		
 		List<Weihnachtsmarkt> biergaerten = q.getResultList();
 		for (Weihnachtsmarkt biergarten : biergaerten) {
@@ -120,7 +101,7 @@ public class WeihnachtsmarktService {
 		
 		
 		return data;
-		*/
+		
 		
 	}
 	
@@ -128,9 +109,6 @@ public class WeihnachtsmarktService {
 	@Produces("application/json")
 	@Path("/holefavoriten")
 	public String getFavoriten() {
-		return "Hello Weihnachtsmarkt holefavoriten OK!";
-		
-		/*
 		List<WeihnachtsmarktVO> biergartenTOs = new ArrayList<WeihnachtsmarktVO>();
 		WeihnachtsmarktJSON biergartenJSON = new WeihnachtsmarktJSON();
 		biergartenJSON.setBiergartenid("GPL");
@@ -138,7 +116,7 @@ public class WeihnachtsmarktService {
 		WeihnachtsmarktVO bg = null;
 		
 		EntityManager em = EMFService.get().createEntityManager();
-		Query q = em.createQuery("select b from Biergarten b where b.favorit=true");
+		Query q = em.createQuery("select b from Weihnachtsmarkt b where b.favorit=true");
 		//q.setParameter("myfavorit", "true");
 				
 		List<Weihnachtsmarkt> biergaerten = q.getResultList();
@@ -170,7 +148,7 @@ public class WeihnachtsmarktService {
 		String data = gson.toJson(biergartenJSON);
 		
 		return data;
-		*/
+		
 		
 	}
 	
@@ -188,7 +166,7 @@ public class WeihnachtsmarktService {
 		WeihnachtsmarktVO bg = null;
 		
 		EntityManager em = EMFService.get().createEntityManager();
-		Query q = em.createQuery("select b from Biergarten b");
+		Query q = em.createQuery("select b from Weihnachtsmarkt b");
 		
 		List<Weihnachtsmarkt> biergaerten = q.getResultList();
 		for (Weihnachtsmarkt biergarten : biergaerten) {
