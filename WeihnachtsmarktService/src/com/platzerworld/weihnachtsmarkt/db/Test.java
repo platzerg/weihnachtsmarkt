@@ -13,7 +13,7 @@ public class Test {
 		Class.forName("org.sqlite.JDBC");
 		// Connection conn = DriverManager.getConnection("jdbc:sqlite:test.db");
 		Connection conn1 = DriverManager
-				.getConnection("jdbc:sqlite:database.sqlite");
+				.getConnection("jdbc:sqlite:biergarten.sqlite");
 		Statement stat1 = conn1.createStatement();
 
 		ResultSet rs1 = stat1.executeQuery("select * from biergarten;");
