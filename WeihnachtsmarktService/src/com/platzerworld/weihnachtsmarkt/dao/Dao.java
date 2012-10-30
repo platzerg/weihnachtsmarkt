@@ -13,7 +13,7 @@ public enum Dao {
 	public List<Weihnachtsmarkt> listBiergarten() {
 		EntityManager em = EMFService.get().createEntityManager();
 		// Read the existing entries
-		Query q = em.createQuery("select m from Biergarten m");
+		Query q = em.createQuery("select m from weihnachtsmarkt m");
 		List<Weihnachtsmarkt> todos = q.getResultList();
 		return todos;
 	}
