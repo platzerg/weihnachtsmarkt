@@ -16,6 +16,8 @@ public class WeihnachtsmarktVO implements Serializable{
 
 	public String name;
 	
+	public String oeffnungszeit;
+	
 	public String strasse;
 	
 	public String plz;
@@ -36,15 +38,7 @@ public class WeihnachtsmarktVO implements Serializable{
 	
 	public String desclong;
 	
-	public String mass;
-	
-	public String apfelschorle;
-	
-	public String riesenbreze;
-	
-	public String obazda;
-	
-	public String biermarke;
+	public String gluehwein;
 	
 	public String lieblingsgericht;
 	

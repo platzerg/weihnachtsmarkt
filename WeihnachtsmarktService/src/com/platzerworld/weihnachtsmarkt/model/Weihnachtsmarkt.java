@@ -13,6 +13,7 @@ public class Weihnachtsmarkt {
 	public Long id;
 	
 	public String name;
+	public String oeffnungszeit;
 	public String strasse;
 	public String plz;
 	public String ort;
@@ -23,11 +24,7 @@ public class Weihnachtsmarkt {
 	public String longitude;
 	public String desc;
 	public String descLong;
-	public String mass;
-	public String apfelschorle;
-	public String riesenbreze;
-	public String obazda;
-	public String biermarke;
+	public String gluehwein;
 	public String lieblingsgericht;
 	public String speisekommentar;
 	public boolean favorit;
@@ -43,6 +40,19 @@ public class Weihnachtsmarkt {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	public String getOeffnungszeit() {
+		return oeffnungszeit;
+	}
+	public void setOeffnungszeit(String oeffnungszeit) {
+		this.oeffnungszeit = oeffnungszeit;
+	}
+	public String getGluehwein() {
+		return gluehwein;
+	}
+	public void setGluehwein(String gluehwein) {
+		this.gluehwein = gluehwein;
 	}
 	public String getStrasse() {
 		return strasse;
@@ -103,36 +113,6 @@ public class Weihnachtsmarkt {
 	}
 	public void setDescLong(String descLong) {
 		this.descLong = descLong;
-	}
-	public String getMass() {
-		return mass;
-	}
-	public void setMass(String mass) {
-		this.mass = mass;
-	}
-	public String getApfelschorle() {
-		return apfelschorle;
-	}
-	public void setApfelschorle(String apfelschorle) {
-		this.apfelschorle = apfelschorle;
-	}
-	public String getRiesenbreze() {
-		return riesenbreze;
-	}
-	public void setRiesenbreze(String riesenbreze) {
-		this.riesenbreze = riesenbreze;
-	}
-	public String getObazda() {
-		return obazda;
-	}
-	public void setObazda(String obazda) {
-		this.obazda = obazda;
-	}
-	public String getBiermarke() {
-		return biermarke;
-	}
-	public void setBiermarke(String biermarke) {
-		this.biermarke = biermarke;
 	}
 	public String getLieblingsgericht() {
 		return lieblingsgericht;
