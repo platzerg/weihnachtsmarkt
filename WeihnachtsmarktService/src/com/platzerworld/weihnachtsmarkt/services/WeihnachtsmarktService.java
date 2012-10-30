@@ -32,8 +32,8 @@ public class WeihnachtsmarktService {
 	@Produces("text/plain")
 	@Path("/insertweihnachtsmarkt")
 	public String insertBiergarten() {
-		return "Hello Weihnachtsmarkt OK!";
-		/*
+		
+		
 		EntityManager em = null;
 		Weihnachtsmarkt weihnachtsmarkt;	
 		em = EMFService.get().createEntityManager();
@@ -70,7 +70,8 @@ public class WeihnachtsmarktService {
 		weihnachtsmarkt.favorit=false;
 		em.persist(weihnachtsmarkt);
 		em.close();
-	*/
+	
+		return "Hello Weihnachtsmarkt OK!";
 		
 		
 	}
