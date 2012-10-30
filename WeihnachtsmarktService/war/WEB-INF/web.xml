@@ -45,7 +45,7 @@
   
   <servlet-mapping>
     <servlet-name>Jersey Web Application</servlet-name>
-    <url-pattern>/platzerworld/weihnachtsmarkt/*</url-pattern>
+    <url-pattern>/platzerworld/*</url-pattern>
   </servlet-mapping>
   
 </web-app>

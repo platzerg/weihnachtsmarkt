@@ -22,6 +22,10 @@ import com.platzerworld.weihnachtsmarkt.vo.WeihnachtsmarktVO;
 
 // http://weihnachtsmarktservice.appspot.com/platzerworld/weihnachtsmarkt/insertweihnachtsmarkt
 
+// http://weihnachtsmarktservice.appspot.com/platzerworld/weihnachtsmarkt/holeweihnachtsmaerkte
+
+// http://weihnachtsmarktservice.appspot.com/platzerworld/weihnachtsmarkt/holefavoriten
+
 @Path("/weihnachtsmarkt/")
 public class WeihnachtsmarktService {
 	@GET
@@ -73,8 +77,10 @@ public class WeihnachtsmarktService {
 	
 	@GET
 	@Produces(MediaType.APPLICATION_JSON) //application/json
-	@Path("/holebiergarten")
+	@Path("/holeweihnachtsmaerkte")
 	public String getBiergarten() {
+		return "Hello Weihnachtsmarkt holeweihnachtsmaerkte OK!";
+		/*
 		List<WeihnachtsmarktVO> biergartenTOs = new ArrayList<WeihnachtsmarktVO>();
 		WeihnachtsmarktJSON biergartenJSON = new WeihnachtsmarktJSON();
 		biergartenJSON.setBiergartenid("GPL");
@@ -113,6 +119,7 @@ public class WeihnachtsmarktService {
 		
 		
 		return data;
+		*/
 		
 	}
 	
@@ -120,6 +127,9 @@ public class WeihnachtsmarktService {
 	@Produces("application/json")
 	@Path("/holefavoriten")
 	public String getFavoriten() {
+		return "Hello Weihnachtsmarkt holefavoriten OK!";
+		
+		/*
 		List<WeihnachtsmarktVO> biergartenTOs = new ArrayList<WeihnachtsmarktVO>();
 		WeihnachtsmarktJSON biergartenJSON = new WeihnachtsmarktJSON();
 		biergartenJSON.setBiergartenid("GPL");
@@ -159,6 +169,7 @@ public class WeihnachtsmarktService {
 		String data = gson.toJson(biergartenJSON);
 		
 		return data;
+		*/
 		
 	}
 	
