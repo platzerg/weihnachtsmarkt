@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/hintergrundbild_480x800"
+    android:orientation="vertical"
+    tools:context=".BiergartenActivity" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dip"
+        android:layout_marginTop="85dip"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@id/btn_biergarten_uebersicht"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_transparent"
+            android:src="@drawable/ueberblick_button" />
+
+        <ImageButton
+            android:id="@id/btn_biergarten_finden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:background="@color/color_transparent"
+            android:src="@drawable/finden_button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_marginLeft="30dip">
+
+        <ImageButton
+            android:id="@id/btn_biergarten_eintragen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_transparent"
+            android:src="@drawable/eintragen_button" />
+
+        <ImageButton
+            android:id="@id/btn_biergarten_favoriten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:background="@color/color_transparent"
+            android:src="@drawable/favoriten_button" />
+
+    </LinearLayout>
+
+</LinearLayout>

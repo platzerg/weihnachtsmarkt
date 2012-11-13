@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <PreferenceCategory android:title="Persönliche Einstellungen">   
+            <CheckBoxPreference
+                android:title="LOAD DATABASE"
+                android:defaultValue="true"
+                android:summary="Datenbank laden?"
+                android:key="PREFERENCE_KEY_LOAD_DB" />
+            
+            <CheckBoxPreference
+                android:title="LOAD FROM CLOUD"
+                android:defaultValue="fasle"
+                android:summary="Datenbank aus Google Cloud laden?"
+                android:key="PREFERENCE_KEY_LOAD_DB_FROM_CLOUD" />
+                   
+        </PreferenceCategory>
+        
+        <PreferenceCategory android:title="Maps">        
+	        <PreferenceScreen
+	            android:key="MapsPrefScreen"
+	            android:title="Biergarten Maps Einstellungen"
+	            android:summary="Maps Einstellungen ...">
+	            
+	            <CheckBoxPreference
+	                        android:title="ANZEIGE RADIUS"
+	                        android:defaultValue="true"
+	                        android:summary="Radius für Maps anzeigen?"
+	                        android:key="PREFERENCE_KEY_RADIUS_ENABLED" />
+	                        
+	                <ListPreference
+	                        android:title="RADIUS WERT"
+	                        android:summary="Auswahl des Radius"
+	                        android:key="PREFERENCE_KEY_RADIUS_VALUE"
+	                        android:entries="@array/radiusvalues"
+	                        android:entryValues="@array/radiusvalues" />
+	                
+	                <ListPreference
+	                        android:title="RADIUS LINIE"
+	                        android:summary="Auswahl der Strichbreite des Radius"
+	                        android:key="PREFERENCE_KEY_RADIUS_STROKE_WIDTH"
+	                        android:entries="@array/radiusstrokewidthvalues"
+	                        android:entryValues="@array/radiusstrokewidthvalues" />
+	                
+	                <ListPreference
+	                        android:title="RADIUS FARBE"
+	                        android:summary="Auswahl der Farbe des Radius"
+	                        android:key="PREFERENCE_KEY_RADIUS_COLOR"
+	                        android:entries="@array/radiuscolorkeyvalues"
+	                        android:entryValues="@array/radiuscolorvalues" />
+	                
+	                <ListPreference
+	                        android:title="RADIUS ALPHA WERT"
+	                        android:summary="Auswahl des Alphawertes des Radius"
+	                        android:key="PREFERENCE_KEY_RADIUS_ALPHA"
+	                        android:entries="@array/radiusalphavalues"
+	                        android:entryValues="@array/radiusalphavalues" />                
+	        </PreferenceScreen>
+        </PreferenceCategory>
+        
+</PreferenceScreen>
