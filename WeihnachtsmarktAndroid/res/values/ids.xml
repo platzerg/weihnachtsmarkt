@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<item type="id" name="id_imageview_biergarten_startseite" />
+	
+	<item type="id" name="opt_biergarten_einstellung" />
+	<item type="id" name="opt_biergarten_beenden" />
+	<item type="id" name="opt_biergarten_hilfe" />
+	<item type="id" name="opt_biergarten_export_csv" />
+	
+	<item type="id" name="opt_biergarten_details_editmodus" />
+	<item type="id" name="opt_biergarten_details_speichern" />
+	<item type="id" name="opt_biergarten_details_route" />
+	
+	<item type="id" name="opt_biergarten_finden_route" />
+	<item type="id" name="opt_biergarten_finden_uebernehmen" />
+	
+	<item type="id" name="col_biergarten_id" />
+	<item type="id" name="col_biergarten_value" />
+	
+	<item type="id" name="txt_biergarten_details_title" />
+	<item type="id" name="txt_biergarten_speisen_title" />
+	<item type="id" name="txt_biergarten_getraenke_title" />
+	
+	<item type="id" name="btn_biergarten_uebersicht" />
+	<item type="id" name="btn_biergarten_finden" />
+	<item type="id" name="btn_biergarten_eintragen" />
+	<item type="id" name="btn_biergarten_favoriten" />
+	
+	<item type="id" name="opt_biergarten_maps_style_satelite" />
+	<item type="id" name="opt_biergarten_maps_style_strasse" />
+	<item type="id" name="opt_biergarten_maps_style_verkehr" />
+	<item type="id" name="opt_biergarten_maps_show_route" />
+	
+	<item type="id" name="txt_biergarten_details_name" />
+	<item type="id" name="txt_biergarten_details_strasse" />
+	<item type="id" name="txt_biergarten_details_plz" />
+	<item type="id" name="txt_biergarten_details_ort" />
+	<item type="id" name="txt_biergarten_details_telefon" />
+	<item type="id" name="txt_biergarten_details_email" />
+	<item type="id" name="txt_biergarten_details_url" />
+	<item type="id" name="txt_biergarten_details_latitude" />
+	<item type="id" name="txt_biergarten_details_longitude" />
+	<item type="id" name="txt_biergarten_details_desc" />
+	<item type="id" name="txt_biergarten_details_desclong" />
+	<item type="id" name="txt_biergarten_details_mass" />
+	<item type="id" name="txt_biergarten_details_apfelschorle" />
+	<item type="id" name="txt_biergarten_details_riesenbrenze" />
+	<item type="id" name="txt_biergarten_details_obazda" />
+	<item type="id" name="txt_biergarten_details_biermarke" />
+	<item type="id" name="txt_biergarten_details_lieblingsgericht" />
+	<item type="id" name="txt_biergarten_details_speisenkommentar" />
+	
+	<item type="id" name="edt_biergarten_details_name" />
+	<item type="id" name="edt_biergarten_details_strasse" />
+	<item type="id" name="edt_biergarten_details_plz" />
+	<item type="id" name="edt_biergarten_details_ort" />
+	<item type="id" name="edt_biergarten_details_telefon" />
+	<item type="id" name="edt_biergarten_details_email" />
+	<item type="id" name="edt_biergarten_details_url" />
+	<item type="id" name="edt_biergarten_details_latitude" />
+	<item type="id" name="edt_biergarten_details_longitude" />
+	<item type="id" name="edt_biergarten_details_desc" />
+	<item type="id" name="edt_biergarten_details_desclong" />
+	<item type="id" name="edt_biergarten_details_mass" />
+	<item type="id" name="edt_biergarten_details_apfelschorle" />
+	<item type="id" name="edt_biergarten_details_riesenbrenze" />
+	<item type="id" name="edt_biergarten_details_obazda" />
+	<item type="id" name="edt_biergarten_details_biermarke" />
+	<item type="id" name="edt_biergarten_details_lieblingsgericht" />
+	<item type="id" name="edt_biergarten_details_speisenkommentar" />
+	
+	<item type="id" name="img_button_biergarten_details_speisen" />
+	<item type="id" name="img_button_biergarten_details_getraenke" />
+	
+	
+	<item type="id" name="txt_biergarten_eintragen_title" />
+	<item type="id" name="txt_biergarten_eintragen_name" />
+	<item type="id" name="txt_biergarten_eintragen_strasse" />
+	<item type="id" name="txt_biergarten_eintragen_plz" />
+	<item type="id" name="txt_biergarten_eintragen_ort" />
+	<item type="id" name="txt_biergarten_eintragen_telefon" />
+	<item type="id" name="txt_biergarten_eintragen_email" />
+	<item type="id" name="txt_biergarten_eintragen_url" />
+	<item type="id" name="txt_biergarten_eintragen_latitude" />
+	<item type="id" name="txt_biergarten_eintragen_longitude" />
+	<item type="id" name="txt_biergarten_eintragen_desc" />
+	
+	<item type="id" name="edt_biergarten_eintragen_name" />
+	<item type="id" name="edt_biergarten_eintragen_strasse" />
+	<item type="id" name="edt_biergarten_eintragen_plz" />
+	<item type="id" name="edt_biergarten_eintragen_ort" />
+	<item type="id" name="edt_biergarten_eintragen_telefon" />
+	<item type="id" name="edt_biergarten_eintragen_email" />
+	<item type="id" name="edt_biergarten_eintragen_url" />
+	<item type="id" name="edt_biergarten_eintragen_latitude" />
+	<item type="id" name="edt_biergarten_eintragen_longitude" />
+	<item type="id" name="edt_biergarten_eintragen_desc" />
+	
+	<item type="id" name="txt_biergarten_finden_title" />
+	
+	
+	<item type="id" name="txt_biergarten_finden_name" />
+	<item type="id" name="edt_biergarten_finden_name" />
+	<item type="id" name="btn_biergarten_suchen" />
+	
+</resources>

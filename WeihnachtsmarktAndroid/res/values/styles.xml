@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    
+    <!-- Theme: BiergartenTheme -->  
+	<style name="BiergartenTheme" parent="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowBackground">@drawable/page_background_480x800</item>
+	</style>
+	    
+    <!-- Widget.TextView.TextViewStyle.Biergarten -->
+	<style name="Widget.TextView.TextViewStyle.Biergarten" parent="@android:style/Widget.TextView">
+	    <item name="android:gravity">center_vertical</item>  
+        <item name="android:layout_height">15dip</item>     
+        <item name="android:minWidth">60dip</item>    
+           
+	</style>	
+	<!-- TextAppearance.Widget.TextViewStyle.Biergarten -->
+	<style name="TextAppearance.Widget.TextViewStyle.Biergarten" parent="@android:style/TextAppearance.Widget.TextView">
+		<item name="android:textSize">15dip</item>
+		<item name="android:textStyle">bold</item>		
+		<item name="android:textColor">@color/color_black</item>   
+	</style>	
+
+	
+	<!-- Widget.EditText.EditTextStyle.Biergarten -->
+	<style name="Widget.EditText.EditTextStyle.Biergarten" parent="@android:style/Widget.EditText">
+	    <item name="android:gravity">center_vertical</item>   
+        <item name="android:padding">3dip</item> 
+		<item name="android:layout_height">25dip</item>   
+        <item name="android:textColor">@color/color_black</item>          
+	</style>
+	<!-- TextAppearance.Widget.EditTextStyle.Biergarten -->
+	<style name="TextAppearance.Widget.EditTextStyle.Biergarten" parent="@android:style/TextAppearance.Widget.EditText">
+		<item name="android:textSize">15dip</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@color/color_black</item> 
+		
+	</style>	
+	
+    
+</resources>

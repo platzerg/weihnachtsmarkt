@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">    
+    <item android:id="@id/opt_biergarten_einstellung"
+          android:title="@string/opt_biergarten_einstellung" />
+    
+    <item android:id="@id/opt_biergarten_beenden"
+          android:title="@string/opt_biergarten_beenden" />
+    
+    <item android:id="@id/opt_biergarten_hilfe"
+          android:title="@string/opt_biergarten_hilfe"/>
+    
+    <item android:id="@id/opt_biergarten_export_csv"
+          android:title="@string/opt_biergarten_export_csv"/>
+    
+    
+</menu>

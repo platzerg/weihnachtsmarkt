@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">    
+    <item android:id="@id/opt_biergarten_maps_style_satelite"
+          android:title="@string/opt_biergarten_maps_style_satelite" />
+    
+    <item android:id="@id/opt_biergarten_maps_style_strasse"
+          android:title="@string/opt_biergarten_maps_style_strasse" />
+    
+    <item android:id="@id/opt_biergarten_maps_style_verkehr"
+          android:title="@string/opt_biergarten_maps_style_verkehr" />
+    
+    <item android:id="@id/opt_biergarten_maps_show_route"
+          android:title="@string/opt_biergarten_maps_show_route" />
+    
+</menu>
