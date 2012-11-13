@@ -53,24 +53,25 @@ public class WeihnachtsmarktGAEDatenbank extends WeihnachtsmarktDatenbank {
 						db.delete(WeihnachtsmarktTbl.TABLE_NAME, null, null);
 				}
 
-				//ID, Name, Strasse, Plz, Ort, Telefon, Email, Url, Latitude, Longitude, Desc, Favorit
+				//ID, Name, Oeffnungszeit, Strasse, Plz, Ort, Telefon, Email, Url, Latitude, Longitude, Desc, Favorit
 				final SQLiteStatement stmtInsertSpieler = db.compileStatement(WeihnachtsmarktTbl.STMT_ANLAGE_INSERT_WITH_ID);
 
 				db.beginTransaction();
 				try {
 					for (WeihnachtsmarktVO biergartenVO : biergaerten) {						
-						stmtInsertSpieler.bindLong(1, biergartenVO.id);
+						stmtInsertSpieler.bindLong(1, 3);						
 						stmtInsertSpieler.bindString(2, biergartenVO.name == null ? "" : biergartenVO.name);
-						stmtInsertSpieler.bindString(3, biergartenVO.strasse == null ? "" : biergartenVO.strasse);
-						stmtInsertSpieler.bindString(4, biergartenVO.plz == null ? "" : biergartenVO.plz);
-						stmtInsertSpieler.bindString(5, biergartenVO.ort == null ? "" : biergartenVO.ort);
-						stmtInsertSpieler.bindString(6, biergartenVO.telefon == null ? "" : biergartenVO.telefon);						
-						stmtInsertSpieler.bindString(7, biergartenVO.email == null ? "" : biergartenVO.email);
-						stmtInsertSpieler.bindString(8, biergartenVO.url == null ? "" : biergartenVO.url);
-						stmtInsertSpieler.bindString(9, biergartenVO.latitude == null ? "0" : biergartenVO.latitude);
-						stmtInsertSpieler.bindString(10, biergartenVO.longitude == null ? "0" : biergartenVO.longitude);
-						stmtInsertSpieler.bindString(11, biergartenVO.desc == null ? "" : biergartenVO.desc);
-						stmtInsertSpieler.bindString(12, String.valueOf(biergartenVO.favorit));
+						stmtInsertSpieler.bindString(3, biergartenVO.oeffnungszeit == null ? "" : biergartenVO.oeffnungszeit);
+						stmtInsertSpieler.bindString(4, biergartenVO.strasse == null ? "" : biergartenVO.strasse);
+						stmtInsertSpieler.bindString(5, biergartenVO.plz == null ? "" : biergartenVO.plz);
+						stmtInsertSpieler.bindString(6, biergartenVO.ort == null ? "" : biergartenVO.ort);
+						stmtInsertSpieler.bindString(7, biergartenVO.telefon == null ? "" : biergartenVO.telefon);						
+						stmtInsertSpieler.bindString(8, biergartenVO.email == null ? "" : biergartenVO.email);
+						stmtInsertSpieler.bindString(9, biergartenVO.url == null ? "" : biergartenVO.url);
+						stmtInsertSpieler.bindString(10, biergartenVO.latitude == null ? "0" : biergartenVO.latitude);
+						stmtInsertSpieler.bindString(11, biergartenVO.longitude == null ? "0" : biergartenVO.longitude);
+						stmtInsertSpieler.bindString(12, biergartenVO.desc == null ? "" : biergartenVO.desc);
+						stmtInsertSpieler.bindString(13, String.valueOf(biergartenVO.favorit));
 						stmtInsertSpieler.executeInsert();
 					}
 

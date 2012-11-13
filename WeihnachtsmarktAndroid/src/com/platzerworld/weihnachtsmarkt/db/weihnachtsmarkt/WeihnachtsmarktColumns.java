@@ -87,7 +87,7 @@ public interface WeihnachtsmarktColumns {
 	/**
 	 * Column Speisenkommentar
 	 */
-	public static String SPEISEKOMMENTAR = "Speisekommentar";
+	public static String SPEISENKOMMENTAR = "Speisenkommentar";
 	
 	/**
 	 * Column Favorit

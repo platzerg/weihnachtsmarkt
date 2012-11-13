@@ -68,7 +68,8 @@ public class WeihnachtsmarktActivity extends Activity implements ConstantsIF{
         setContentView(R.layout.biergarten);
         
         init();
-        ladeBiergaerten(); 
+        ladeBiergaerten();
+        //loadBiergartenFromCloud();
     }
     
     @Override

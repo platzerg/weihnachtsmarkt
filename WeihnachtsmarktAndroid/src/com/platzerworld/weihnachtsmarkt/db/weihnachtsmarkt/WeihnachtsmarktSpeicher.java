@@ -4,6 +4,8 @@
 package com.platzerworld.weihnachtsmarkt.db.weihnachtsmarkt;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 import android.content.ContentValues;
@@ -93,7 +95,7 @@ public class WeihnachtsmarktSpeicher {
 		daten.put(WeihnachtsmarktTbl.DESCLONG, biergartenVO.desclong);
 		daten.put(WeihnachtsmarktTbl.GLUEHWEIN, biergartenVO.gluehwein);
 		daten.put(WeihnachtsmarktTbl.LIEBLINGSGERICHT, biergartenVO.lieblingsgericht);
-		daten.put(WeihnachtsmarktTbl.SPEISEKOMMENTAR, biergartenVO.speisenkommentar);
+		daten.put(WeihnachtsmarktTbl.SPEISENKOMMENTAR, biergartenVO.speisenkommentar);
 		daten.put(WeihnachtsmarktTbl.FAVORIT, String.valueOf(biergartenVO.favorit));
 
 		final SQLiteDatabase dbCon = mDb.getWritableDatabase();
@@ -136,7 +138,7 @@ public class WeihnachtsmarktSpeicher {
 		daten.put(WeihnachtsmarktTbl.DESCLONG, biergartenVO.desclong);
 		daten.put(WeihnachtsmarktTbl.GLUEHWEIN, biergartenVO.gluehwein);
 		daten.put(WeihnachtsmarktTbl.LIEBLINGSGERICHT, biergartenVO.lieblingsgericht);
-		daten.put(WeihnachtsmarktTbl.SPEISEKOMMENTAR, biergartenVO.speisenkommentar);
+		daten.put(WeihnachtsmarktTbl.SPEISENKOMMENTAR, biergartenVO.speisenkommentar);
 		daten.put(WeihnachtsmarktTbl.FAVORIT, String.valueOf(biergartenVO.favorit));
 
 		final SQLiteDatabase dbCon = mDb.getWritableDatabase();
@@ -388,8 +390,8 @@ public class WeihnachtsmarktSpeicher {
 		try{
 			if (c != null ) {
 	    		if  (c.moveToFirst()) {
-	    			do {    				
-	    				biergartenVO= new WeihnachtsmarktVO();    				
+	    			do {    			
+	    				biergartenVO= new WeihnachtsmarktVO();    
 	    				biergartenVO.key = c.getLong(c.getColumnIndex(WeihnachtsmarktTbl.ID));
 	    				biergartenVO.id = c.getLong(c.getColumnIndex(WeihnachtsmarktTbl.ID));
 	    				biergartenVO.name = c.getString(c.getColumnIndex(WeihnachtsmarktTbl.NAME));    
@@ -410,13 +412,15 @@ public class WeihnachtsmarktSpeicher {
 						
 						biergartenVO.gluehwein= c.getString(c.getColumnIndex(WeihnachtsmarktTbl.GLUEHWEIN));   
 						biergartenVO.lieblingsgericht= c.getString(c.getColumnIndex(WeihnachtsmarktTbl.LIEBLINGSGERICHT));  
-						biergartenVO.speisenkommentar= c.getString(c.getColumnIndex(WeihnachtsmarktTbl.SPEISEKOMMENTAR));   
+						// biergartenVO.speisenkommentar= c.getString(c.getColumnIndex(WeihnachtsmarktTbl.SPEISENKOMMENTAR));   
 						
 	    				
 	    				biergartenVOs.add(biergartenVO);
 	    			}while (c.moveToNext());
 	    		} 
 	    	}
+		}catch(Throwable th){
+			LOG.v(TAG, th.getMessage());
 		} finally {
 			if (c != null) {
 				c.close();
@@ -532,6 +536,9 @@ public class WeihnachtsmarktSpeicher {
 			
 			
 			return ladeBiergartenKeyValueVO(klassenCursor);
+		}catch(Throwable th){
+			LOG.v(TAG, th.getMessage());
+			return Collections.EMPTY_LIST;
 		}finally{
 			schliessen();
 		}

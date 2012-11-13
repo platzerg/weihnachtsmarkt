@@ -68,7 +68,7 @@ public final class WeihnachtsmarktTbl implements WeihnachtsmarktColumns {
 
 	/** Liste aller bekannten Attribute. */
 	public static final String[] ALL_COLUMNS = new String[] { 
-		ID, NAME, OEFFNUNGSZEIT, STRASSE, PLZ, ORT, TELEFON, EMAIL, URL, LATITUDE, LONGITUDE, DESC, DESCLONG, GLUEHWEIN, LIEBLINGSGERICHT, SPEISEKOMMENTAR, FAVORIT};
+		ID, NAME, OEFFNUNGSZEIT, STRASSE, PLZ, ORT, TELEFON, EMAIL, URL, LATITUDE, LONGITUDE, DESC, DESCLONG, GLUEHWEIN, LIEBLINGSGERICHT, FAVORIT};
 
 	/**
 	 * WHERE-Bedingung für ID-Anfrage.
