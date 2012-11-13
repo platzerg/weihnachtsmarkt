@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/hintergrund_3_400x800"
+    android:orientation="vertical" >
+
+<LinearLayout
+    android:id="@+id/linearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dip"
+    android:layout_marginTop="15dip"
+    android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_biergarten_finden_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/txt_biergarten_finden_title"
+            android:textAppearance="@style/TextAppearance.Widget.TextViewStyle.Biergarten"
+            android:textColor="@color/color_eingabe_text"
+            android:textSize="30dip"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dip" >
+
+    <TextView
+        android:id="@+id/txt_biergarten_finden_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dip"
+        android:text="@string/txt_biergarten_finden_name"
+        android:textAppearance="@style/TextAppearance.Widget.EditTextStyle.Biergarten" />
+
+    <EditText
+        android:id="@+id/edt_biergarten_finden_name"
+        style="@style/Widget.EditText.EditTextStyle.Biergarten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="text"
+        android:textAppearance="@style/TextAppearance.Widget.EditTextStyle.Biergarten" />
+
+    <Button
+        android:id="@+id/btn_biergarten_suchen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_biergarten_suchen" />
+
+</LinearLayout>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlayout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<!--  
+        Arbeitsrechner-> android:apiKey="0jXjYuY5K587vUVUYOjqDbFsGl1C6Hqk__9Cdjw"
+        Windows7->       android:apiKey="0jXjYuY5K5865KaKwUrNbbVaGZBgBha_Z3R-3uw"
+        MAC->			 android:apiKey="0jXjYuY5K587iM4QIAyegYUX9QVjWaMyFbHU95w"
+        0jXjYuY5K586HN0b9hYV0IUPWEabvasOnQRETBg
+   
+    -->
+    
+    <com.google.android.maps.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map_view_finden"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:apiKey="0jXjYuY5K5878fcBaWHjc78J4CbbLsULJDy7eiQ"
+        android:clickable="true"
+        android:enabled="true" />
+                 
+</RelativeLayout>
+
+</LinearLayout>

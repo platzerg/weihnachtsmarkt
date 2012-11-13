@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   	
+   	<string-array name="radiusvalues">
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
+        <item>5000</item>
+        <item>6000</item>
+        <item>7000</item>
+        <item>8000</item>
+        <item>9000</item>
+        <item>10000</item>
+        <item>11000</item>
+        <item>12000</item>
+        <item>13000</item>
+        <item>14000</item>
+        <item>15000</item>
+        <item>16000</item>
+        <item>17000</item>
+        <item>18000</item>
+        <item>19000</item>
+        <item>20000</item>
+        <item>25000</item>
+        <item>30000</item>
+        <item>35000</item>
+        <item>40000</item>
+        <item>100000</item>
+   	</string-array>   
+   	
+   	<string-array name="radiusstrokewidthvalues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+   	</string-array>
+   	
+   	<string-array name="radiuscolorkeyvalues">
+        <item>Rot</item>
+        <item>Blau</item>
+        <item>Grün</item>
+        <item>Gelb</item>
+        <item>Cyan</item>        
+        <item>Grau</item>
+        <item>Magenta</item>
+        <item>Weiss</item>
+        <item>Hellgrau</item>        
+        <item>Transparent</item>
+   	</string-array>    
+   	
+   	<string-array name="radiuscolorvalues">
+   	    <item>-65281</item>
+        <item>-16777216</item>
+        <item>-7829368</item>
+        <item>-1</item>
+        <item>-16776961</item>        
+        <item>-12303292</item>
+        <item>-3355444</item>
+        <item>0</item>
+        <item>-16711936</item>
+        <item>-65536</item>
+   	</string-array>    
+   	
+   	<string-array name="radiusalphavalues">
+        <item>10</item>
+        <item>50</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+   	</string-array>      
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@id/opt_biergarten_details_editmodus"
+          android:title="@string/opt_biergarten_details_editmodus" />
+    
+    <item android:id="@id/opt_biergarten_details_speichern"
+          android:title="@string/opt_biergarten_details_speichern" />
+    
+    <item android:id="@id/opt_biergarten_details_route"
+          android:title="@string/opt_biergarten_details_route" />
+</menu>
